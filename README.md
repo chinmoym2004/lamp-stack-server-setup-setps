@@ -8,3 +8,8 @@ To run the file , you need to add execution permission (if you don't see its the
   `CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';`
  `GRANT ALL PRIVILEGES ON * . * TO 'username'@'localhost';`
  `FLUSH PRIVILEGES;`
+
+
+This is to use .env variable
+
+pip install -U python-dotenv
