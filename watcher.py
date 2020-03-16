@@ -10,8 +10,8 @@ print("Pinging Host : "+sys.argv[1]+"\n\n");
 while 1:
     response = os.system("ping -c 1 "+hostname)
     if response==0:
-        print(datetime.datetime.now()+" :  Server is UP\n\n")
+        print(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")+" :  Server is UP\n\n")
     else:
-        print(datetime.datetime.now()+" ; Server is DOWN !!!!\n\n")
+        print(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")+" ; Server is DOWN !!!!\n\n")
     time.sleep(120)
 
